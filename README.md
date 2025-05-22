@@ -86,7 +86,7 @@ def glcm(image, derajat):
 ```
 
 ## Feature Selection
-Pada tahap ini, Anda diminta untuk melakukan seleksi fitur. Anda dapat menggunakan teknik seleksi fitur seperti correlation, PCA, atau teknik seleksi fitur lain yang Anda ketahui. NAH PADA TEMPALTE CODE FEATURE SELECTION MENGGUNAKAN CORRELATION YGY.
+Pada tahap ini, Anda diminta untuk melakukan seleksi fitur. Anda dapat menggunakan teknik seleksi fitur seperti correlation, PCA, atau teknik seleksi fitur lain yang Anda ketahui. NAH PADA TEMPLATE CODE FEATURE SELECTION MENGGUNAKAN CORRELATION YGY.
 ``` python
 correlation = hasilEkstrak.drop(columns=['Label','Filename']).corr()
 ......
