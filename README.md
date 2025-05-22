@@ -7,16 +7,16 @@
 # JANGAN LUPA KASI MARKDOWN YA
 # Project Overview
 Pada project PCD ini, Anda akan melakukan experiment kalsifikasi dengan menggunakan dataset yang telah Anda siapkan sebelumnya. Hal ini bertujuan untuk :
-- menguji kemampuan Anda dalam mengimplemetasikan teknik pengolahan citra untuk mengklasifikasikan citra.
-- memilih tahapan preprocessing yang tepat sesuai dengan karakteristik data yang ada.
+- Menguji kemampuan Anda dalam mengimplemetasikan teknik pengolahan citra untuk mengklasifikasikan citra.
+- Memilih tahapan preprocessing yang tepat sesuai dengan karakteristik data yang ada.
 
-Pemilihan Preprocessing yang digunakan harus menggunakan Preprocessing yang anda telah lakukan dari praktikum Modul 1 - 5. Setelah itu Anda akan melakukan feature extraction dan melakukan pembuatan model klasifikasi.
-Perlu di perhatikan bahwa yang menjadi acuan project  adalah tepatnya `preprocessing` dan proses `extraction feature` jadi Anda tidak perlu khawatir dengan hasil akhir dengan akurasi yang mungkin tidak bagus. Selain itu untuk melihat pemahaman Anda dalam analisis Anda akan melakukan eksperimen 3 kali percobaan dengan notebook yang berbeda (format notebook terdapat pada template). Pada setiap percobaannya, Anda diharuskan melakukan improvement pada setiap preprocessing yang telah Anda buat sebelumnya. Anda dapat melakukan improvement dengan cara menyesuaikan jumlah preprocessing pada setiap percobaan. Misalnya, Project anda akan menggunakan total 5 Preprocessing (pre1, pre2, pre3, pre4, pre 5) maka:
+Pemilihan Preprocessing yang digunakan harus menggunakan Preprocessing yang anda telah dilakukan dari praktikum Modul 1 - 5. Setelah itu Anda akan melakukan feature extraction dan melakukan pembuatan model klasifikasi.
+Perlu di perhatikan bahwa yang menjadi acuan project  adalah tepatnya `preprocessing` dan proses `extraction feature` jadi Anda tidak perlu khawatir dengan hasil akhir dengan akurasi yang mungkin tidak bagus. Selain itu untuk melihat pemahaman Anda dalam analisis Anda akan melakukan eksperimen 3 kali percobaan dengan notebook yang berbeda (format notebook terdapat pada template). Pada setiap percobaannya, Anda diharuskan melakukan improvement pada setiap preprocessing yang telah Anda buat sebelumnya. Anda dapat melakukan improvement dengan cara menyesuaikan jumlah preprocessing pada setiap percobaan. Misalnya, Project Anda akan menggunakan total 5 Preprocessing (pre1, pre2, pre3, pre4, pre 5) maka:
 - Percobaan Pertama (2 Preprocessing menggunakan pre1, pre2)
 - Percobaan Pertama (4 Preprocessing menggunakan pre1, pre2, pre3, pre4)
 - Percobaan Pertama (5 Preprocessing menggunakan pre1, pre2, pre3, pre4, pre5)
 
-Lalu dari setiap percobaan lihat bagaimana perbedaan akurasinya untuk setiap model, Random Forest berapa, SVM berapa, KNN berapa. Berokut ini adalah Tahapan Umum yang digunakan dalam Machine Learning. SELAMAT DATANG DI LAB 1
+Lalu dari setiap percobaan lihat bagaimana perbedaan akurasinya untuk setiap model, Random Forest berapa, SVM berapa, KNN berapa. Berikut ini adalah Tahapan Umum yang digunakan dalam Machine Learning. SELAMAT DATANG DI LAB 1
 
 # IMPORT LIBRARY
 Anda menginport Library yang dibutuhkan di sini, Anda tidak harus mengikuti dan menggunakan seluruh library yang ada pada template. Library pada template adalah library umum yang sekiranya sering digunakan pada Machine Learning dalam konteks klasifikasi, jadi gunakan library yang di perlukan saja ya.
@@ -27,7 +27,7 @@ Anda menginport Library yang dibutuhkan di sini, Anda tidak harus mengikuti dan 
   from library.library_yang_saya_butuhkan import library, library
 ```
 # Load Data
-Setelah Import Library. Selanjutnya tahapan membaca dataset. Pada praktikum modul 1 - 5 Anda pernah membaca beberapa image kedalam code. Pada Project ini Anda tidak hanya akan membaca 1 atau 2 image saja tetapi ratusan bahkan ribuan image bukan hanya image tapi anda akan berurusan dengan label setiap image, jadi sesuaikan code pada template dengan dataset label (Label adalah nama setiap folder pada dataset anda yang berisi image) yang Anda miliki. Pertama-tama lakukanlah data loading(baca dataset) beserta labelnya, Anda bisa melakukan penyeragaman ukuran dari dataset dengan resize, jika ukuran setiap image berbeda pada datset Anda. Misalnya ada yang 100x200, 300x100 maka Anda harus mengubahnya ke ukuran yang sama misalnya 100x100 atau 150x150. Sekedar informasi semakin besar ukuran setiap image maka Loadingnya semakin lama jadi usahakan juga ukuran image rendah, cmiwww
+Setelah Import Library. Selanjutnya tahapan membaca dataset. Pada praktikum modul 1 - 5 Anda pernah membaca beberapa image kedalam code. Pada Project ini Anda tidak hanya akan membaca 1 atau 2 image saja tetapi ratusan bahkan ribuan image bukan hanya image tapi anda akan berurusan dengan label setiap image, jadi sesuaikan code pada template dengan dataset label (label adalah nama setiap folder pada dataset anda yang berisi image) yang Anda miliki. Pertama-tama lakukanlah data loading (baca dataset) beserta labelnya, Anda bisa melakukan penyeragaman ukuran dari dataset dengan resize, jika ukuran setiap image berbeda pada datset Anda. Misalnya ada yang 100x200, 300x100 maka Anda harus mengubahnya ke ukuran yang sama misalnya 100x100 atau 150x150. Sekedar informasi semakin besar ukuran setiap image maka Loadingnya semakin lama jadi usahakan juga ukuran image rendah, cmiwww
 ``` python
   data = []
   labels = []
@@ -59,7 +59,7 @@ Output: Contoh Image Augmentation
 ![image](https://github.com/user-attachments/assets/9ea656a7-a69c-47fa-98fc-2a598b81c3a0)
 
 ## Preprocessing
-Selanjutnya, ini dia Tahap paling krusial Anda dapat melakukan teknik preprocessing yang Anda anggap perlu. Jelaskan alasan Anda menggunakan teknik tersebut, Anda wajib gunakan preprocessing yang ada pada modul-modul yang telah Anda pelajari sebelumnya pada praktikum. Jika Anda merasa preprocessig yang ada pada praktikum tidak sesuai maka silahkan diskusikan dengan Asisten masing" untuk mendapatkan pencerahan.
+Selanjutnya, ini dia tahap paling krusial Anda dapat melakukan teknik preprocessing yang Anda anggap perlu. Jelaskan alasan Anda menggunakan teknik tersebut, Anda wajib gunakan preprocessing yang ada pada modul-modul yang telah Anda pelajari sebelumnya pada praktikum. Jika Anda merasa preprocessig yang ada pada praktikum tidak sesuai maka silahkan diskusikan dengan Asisten masing" untuk mendapatkan pencerahan.
 ``` python
 def prepro1():
     pass
