@@ -4,6 +4,7 @@
 ###  siB : F1D000000
 ###  siC : F1D000000
 
+# JANGAN LUPA KASI MARK DOWN SEPERTI INI YA GES
 # Project Overview
 Pada project PCD ini, Anda akan melakukan experiment kalsifikasi dengan menggunakan dataset yang telah Anda siapkan sebelumnya. Hal ini bertujuan untuk :
 - menguji kemampuan Anda dalam mengimplemetasikan teknik pengolahan citra untuk mengklasifikasikan citra.
