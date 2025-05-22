@@ -112,6 +112,7 @@ Pada tahap ini, Anda diminta untuk membuat model klasifikasi. Berikut merupakan 
 - K-Nearest Neighbors (KNN)
 - Support Vector Machine (SVM)
 - Random Forest
+
 Gunakan akurasi sebagai metrik yang digunakan untuk menampilkan hasil klasifikasi.
 ```python
 # Train Random Forest Classifier
