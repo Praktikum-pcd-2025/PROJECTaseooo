@@ -120,17 +120,10 @@ rf.fit(dataset, dataset)
 svm.fit(dataset, dataset)
 # Train KNN Classifier
 knn.fit(dataset, dataset)
-```
 
-# Evaluation
-Pada bagian ini Anda perlu mengevaluasi model klasifikasi yang telah Anda buat. dengan menampilkan  confusion matrix, dan Clasification Report: accuracy, precision, recall, f1 score. **Jelaskan hasil evaluasi yang Anda dapatkan dan berikan analisis mengenai hasil evaluasi tersebut**.
-
-``` python
 def inidiaClassificationReport(dataset, dataset):
 	print(classification_report(dataset, dataset))
 
-def plot_confusion_matrix(dataset, dataset, title):
-  print(confusion_matrix)
 ```
 Output : Contoh Classsification Report
 |               | Accuracy | Precision | Recall   | F1-Score |
@@ -138,6 +131,15 @@ Output : Contoh Classsification Report
 | KNN           | 0.948667 | 0.948664  | 0.948667 | 0.948504 |
 | SVM           | 0.976333 | 0.976319  | 0.976333 | 0.976333 |
 | Random Forest | 0.959667 | 0.959822  | 0.959667 | 0.959615 |
+
+# Evaluation
+Pada bagian ini Anda perlu mengevaluasi model klasifikasi yang telah Anda buat. dengan menampilkan  confusion matrix, dan Clasification Report: accuracy, precision, recall, f1 score. **Jelaskan hasil evaluasi yang Anda dapatkan dan berikan analisis mengenai hasil evaluasi tersebut**.
+
+``` python
+
+def plot_confusion_matrix(dataset, dataset, title):
+  print(confusion_matrix)
+```
 
 Output: contoh confusion matrix
 ![image](https://github.com/user-attachments/assets/aec4ac9c-e687-4354-b02d-833caf26db6b)
