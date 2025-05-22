@@ -40,7 +40,9 @@ Selanjutnya, Anda diminta untuk melakukan eksplorasi data untuk memahami karakte
   print(Output: file_name)
 ```
 Output Contoh Visualisasi Distribusi Data: 
+
 ![image](https://github.com/user-attachments/assets/bcf4e18c-d6a5-4627-a4d3-c4a2fdb35e8c)
+
 Output: Contoh Sample Data:
 ![image](https://github.com/user-attachments/assets/0084d31f-386e-49f9-9de5-4863ec4d73de)
 
